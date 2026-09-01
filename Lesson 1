@@ -1,0 +1,96 @@
+🚀 আজ থেকেই শুরু করি — Lesson 1
+Network কী?
+
+সহজভাবে:
+
+একাধিক device একে অপরের সাথে data communicate করতে পারলে সেটাকে network বলা যায়।
+
+উদাহরণ:
+
+PC1 ─── Switch ─── PC2
+             │
+             └──── Printer
+
+এখানে PC1, PC2 এবং Printer একে অপরের সাথে communication করতে পারছে।
+
+Network-এর প্রধান Device
+1. End Device
+
+যে device data পাঠায়/গ্রহণ করে।
+
+উদাহরণ:
+
+PC
+Laptop
+Server
+Printer
+IP Phone
+2. Switch
+
+একই LAN-এর device-গুলোকে connect করে।
+
+PC1 ──┐
+PC2 ──┼── Switch
+PC3 ──┘
+
+Switch মূলত MAC Address ব্যবহার করে frame forward করে।
+
+3. Router
+
+ভিন্ন network-এর মধ্যে packet forward করে।
+
+LAN 1
+192.168.1.0/24
+      │
+    Router
+      │
+LAN 2
+192.168.2.0/24
+
+Router এখানে দুইটি আলাদা network-এর মধ্যে communication করাচ্ছে।
+
+⭐ আজকের প্রথম Exam Concept
+
+ধরো:
+
+PC1
+IP: 192.168.1.10
+      │
+      │
+    Switch
+      │
+PC2
+IP: 192.168.1.20
+
+PC1 → PC2 data পাঠাবে।
+
+PC1-এর প্রশ্ন:
+
+"192.168.1.20-এর MAC Address কী?"
+
+তখন PC1 ARP ব্যবহার করে।
+
+ARP-এর পূর্ণরূপ:
+
+Address Resolution Protocol
+
+এর কাজ:
+
+IPv4 Address → MAC Address বের করা।
+
+এটা CCNA-তে খুব গুরুত্বপূর্ণ।
+
+📝 আজকের Homework
+
+এখন তুমি আমাকে কোনো বই/ভিডিও দেখে নয়, নিজের মাথা থেকে এই ১০টার উত্তর দেবে:
+
+Network কী?
+End Device কী?
+Switch-এর primary purpose কী?
+Router-এর primary purpose কী?
+Switch কোন address ব্যবহার করে frame forward করে?
+Router কোন layer-এ কাজ করে?
+MAC Address কী?
+IP Address কী?
+ARP কী?
+IP Address থেকে MAC Address বের করতে কোন protocol ব্যবহার হয়?
