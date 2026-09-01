@@ -9,3 +9,5 @@ CCNA in Bangla
 **Lesson 3:**  on LAN, WAN, and Internet= Added Lesson 3 covering LAN, WAN, and Internet concepts with examples and a quiz.
 
 **Lesson 4:** Overview of OSI Model: Introduced Lesson 4 covering the OSI Model, its layers, and key concepts.
+
+**Lesson 5:** on Transport Layer protocols: Added comprehensive lesson on the Transport Layer, covering TCP and UDP protocols, their characteristics, and differences.
