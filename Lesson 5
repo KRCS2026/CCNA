@@ -1,0 +1,160 @@
+🟢 Lesson 5 — Transport Layer
+
+আজ আমরা OSI Layer 4 শিখব।
+
+Layer 4-এর নাম:
+
+Transport Layer
+
+এখানে সবচেয়ে গুরুত্বপূর্ণ দুইটা protocol:
+
+TCP
+UDP
+
+এ দুটো CCNA-তে অবশ্যই ভালোভাবে জানতে হবে।
+
+🟡 TCP কী?
+
+TCP-এর পূর্ণরূপ:
+
+Transmission Control Protocol
+
+TCP হলো connection-oriented protocol।
+
+সহজ উদাহরণ:
+
+তুমি কাউকে একটা important document পাঠাচ্ছো।
+
+তুমি চাইবে:
+
+"Document-এর সব অংশ ঠিকমতো পৌঁছেছে তো?"
+
+TCP এই ধরনের reliability দেয়।
+
+TCP-এর গুরুত্বপূর্ণ বৈশিষ্ট্য:
+Connection establish করে
+Reliable
+Data delivery নিশ্চিত করার চেষ্টা করে
+Lost data retransmit করতে পারে
+Sequencing করে
+Acknowledgment ব্যবহার করে
+🟡 UDP কী?
+
+UDP-এর পূর্ণরূপ:
+
+User Datagram Protocol
+
+UDP হলো connectionless protocol।
+
+ধরো তুমি live video call করছো।
+
+এখানে speed খুব গুরুত্বপূর্ণ।
+
+একটা packet হারিয়ে গেলে পুরনো packet আবার পাঠানোর জন্য অপেক্ষা করলে live conversation-এর সমস্যা হবে।
+
+তাই UDP:
+
+Fast এবং lightweight, কিন্তু TCP-এর মতো reliability mechanism নেই।
+
+🧠 TCP vs UDP
+
+এটা খুব ভালোভাবে বুঝো:
+
+TCP	UDP
+Reliable	Less reliable
+Connection-oriented	Connectionless
+Acknowledgment	সাধারণত নেই
+Retransmission	আছে
+তুলনামূলক বেশি overhead	কম overhead
+Reliability বেশি গুরুত্বপূর্ণ	Speed/low overhead গুরুত্বপূর্ণ
+🎯 বাস্তব Example
+🌐 Website
+
+তুমি website-এর data চাইছো।
+
+Data-এর কিছু অংশ হারিয়ে গেলে webpage ঠিকমতো load নাও হতে পারে।
+
+তাই অনেক common application TCP ব্যবহার করে।
+
+🎥 Live Video / Voice
+
+Live communication-এ delay কম রাখা গুরুত্বপূর্ণ।
+
+তাই real-time traffic-এ UDP খুব গুরুত্বপূর্ণ।
+
+⭐ কিন্তু একটা ভুল ধারণা এড়িয়ে চলো
+
+এমন না যে:
+
+"TCP সবসময় slow আর UDP সবসময় fast."
+
+এটা exam-এ এমনভাবে ভাববে না।
+
+মূল পার্থক্য হলো:
+
+TCP reliability এবং connection management-এর জন্য বেশি mechanism ব্যবহার করে।
+
+UDP connection establish না করে কম overhead-এ data পাঠায়।
+
+🔥 TCP-এর একটা গুরুত্বপূর্ণ বিষয়
+
+TCP connection establish করার সময় ব্যবহার করে:
+
+Three-Way Handshake
+
+তিনটি ধাপ:
+
+PC                          Server
+
+ │ -------- SYN ----------> │
+ │ <------ SYN-ACK -------- │
+ │ -------- ACK ----------> │
+ │                          │
+ │     Connection Ready    │
+
+মনে রাখো:
+
+SYN → SYN-ACK → ACK
+
+এটা CCNA-এর খুব common concept।
+
+🧠 সহজ analogy
+
+তুমি ফোন করছো:
+
+তুমি: "Hello, শুনতে পাচ্ছো?"
+→ SYN
+
+বন্ধু: "হ্যাঁ, শুনতে পাচ্ছি।"
+→ SYN-ACK
+
+তুমি: "ঠিক আছে, তাহলে কথা বলি।"
+→ ACK
+
+তারপর communication শুরু।
+
+এটাই Three-Way Handshake-এর basic idea।
+
+📝 আজকের Quiz
+
+এবার দেখি তুমি TCP/UDP কতটা বুঝেছো।
+
+১. TCP-এর পূর্ণরূপ কী?
+
+২. UDP-এর পূর্ণরূপ কী?
+
+৩. TCP কি connection-oriented নাকি connectionless?
+
+৪. UDP কি connection-oriented নাকি connectionless?
+
+৫. TCP-এর একটি গুরুত্বপূর্ণ সুবিধা কী?
+
+৬. UDP-এর একটি গুরুত্বপূর্ণ সুবিধা কী?
+
+৭. TCP Three-Way Handshake-এর তিনটি step কী?
+
+৮. SYN-এর পর কোনটা আসে?
+
+৯. SYN-ACK-এর পর কোনটা আসে?
+
+১০. TCP কি retransmission করতে পারে?
