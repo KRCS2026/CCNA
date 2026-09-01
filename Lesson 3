@@ -1,0 +1,113 @@
+🟢 Lesson 3 — LAN, WAN এবং Internet
+
+এখন আমরা বুঝব Network কত ধরনের হতে পারে।
+
+1️⃣ LAN
+
+LAN = Local Area Network
+
+ছোট একটা জায়গার network।
+
+যেমন:
+
+বাসা
+Office
+School
+Computer Lab
+
+Example:
+
+PC ──┐
+PC ──┼── Switch
+PC ──┘
+
+এটা একটা LAN হতে পারে।
+
+👉 LAN = ছোট/সীমিত geographic area-এর network
+
+2️⃣ WAN
+
+WAN = Wide Area Network
+
+অনেক বড় geographic area জুড়ে network।
+
+যেমন:
+
+Dhaka Office
+     │
+     │ WAN
+     │
+Chittagong Office
+
+দুই শহরের office network connect করা হলে সেটা WAN হতে পারে।
+
+👉 WAN = বড় geographic area-এর network
+
+🌍 Internet
+
+এখন LAN + WAN-এর ধারণা একসাথে করো।
+
+তোমার বাসায়:
+
+Mobile
+   │
+ Wi-Fi
+   │
+Router
+   │
+ ISP
+   │
+Internet
+
+তোমার বাসার network → LAN
+
+ISP-এর মাধ্যমে দূরের network-এর সাথে communication → WAN/Internet connectivity
+
+আর Internet হলো:
+
+অনেকগুলো interconnected network-এর বিশাল network।
+
+🧠 একটা বাস্তব Example
+
+ধরো তুমি Dhaka থেকে Germany-র একটা server-এ website খুললে।
+
+তোমার journey মোটামুটি:
+
+Your Laptop
+     ↓
+Home LAN
+     ↓
+Router
+     ↓
+ISP
+     ↓
+WAN / Internet
+     ↓
+Germany Network
+     ↓
+Server
+
+এখন তুমি বুঝতে পারছো কেন Router গুরুত্বপূর্ণ।
+
+Router বিভিন্ন network-এর মধ্যে packet forward করে।
+
+⭐ আজকের ৩টা জিনিস
+Term	Meaning
+LAN	Local Area Network
+WAN	Wide Area Network
+Internet	Interconnected networks
+📝 তোমার Quiz — Level 3
+
+নিজের ভাষায় উত্তর দাও:
+
+১. LAN কী? একটা example দাও।
+
+২. WAN কী? একটা example দাও।
+
+৩. LAN এবং WAN-এর মূল পার্থক্য কী?
+
+৪. বাসার Wi-Fi network সাধারণত LAN নাকি WAN?
+
+৫. Dhaka office এবং Chittagong office-এর network connect করলে সেটা LAN নাকি WAN হতে পারে?
+
+৬. Internet কী?
