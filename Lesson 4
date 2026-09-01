@@ -1,0 +1,139 @@
+🟢 এবার Lesson 4: OSI Model
+
+এটা CCNA-এর খুব গুরুত্বপূর্ণ foundation।
+
+প্রথমে ভয় পাওয়ার কিছু নেই। 😄
+
+OSI-এর পূর্ণরূপ:
+
+Open Systems Interconnection
+
+OSI Model-এ মোট ৭টি Layer আছে।
+
+উপর থেকে নিচে:
+
+7️⃣ Application
+6️⃣ Presentation
+5️⃣ Session
+4️⃣ Transport
+3️⃣ Network
+2️⃣ Data Link
+1️⃣ Physical
+মনে রাখার সহজ Trick:
+
+A P S T N D P
+
+বাংলায় একটা বাক্য বানাতে পারো:
+
+All People Seem To Need Data Packets
+
+এখনই প্রতিটা layer মুখস্থ করার দরকার নেই।
+
+আজ শুধু বুঝো:
+
+OSI Model network communication-কে ৭টি আলাদা layer-এ ভাগ করে বুঝতে সাহায্য করে।
+
+🧠 একটা বাস্তব উদাহরণ
+
+তুমি Chrome খুলে একটা website visit করলে:
+
+Application
+     ↓
+Presentation
+     ↓
+Session
+     ↓
+Transport
+     ↓
+Network
+     ↓
+Data Link
+     ↓
+Physical
+
+তারপর data network দিয়ে যায়।
+
+Destination-এ পৌঁছানোর পর আবার উল্টো দিকে:
+
+Physical
+    ↑
+Data Link
+    ↑
+Network
+    ↑
+Transport
+    ↑
+Session
+    ↑
+Presentation
+    ↑
+Application
+
+এই process-টাকে আমরা পরে বিস্তারিত বুঝব।
+
+⭐ আজ শুধু Layer 1–3
+
+আগে তিনটা layer শিখি।
+
+Layer 1 — Physical
+
+এখানে actual physical signal/data transmission।
+
+উদাহরণ:
+
+Cable
+Fiber
+Radio signal
+Connector
+
+Keyword: Bits
+
+Layer 2 — Data Link
+
+এখানে Frame এবং MAC Address খুব গুরুত্বপূর্ণ।
+
+Keyword: MAC + Frame
+
+Switch মূলত Layer 2-এর গুরুত্বপূর্ণ device।
+
+Layer 3 — Network
+
+এখানে IP Address এবং Routing গুরুত্বপূর্ণ।
+
+Keyword: IP + Packet
+
+Router Layer 3-এর গুরুত্বপূর্ণ device।
+
+🔥 সবচেয়ে গুরুত্বপূর্ণ relationship
+
+এটা এখন থেকে মাথায় রাখো:
+
+Layer 3 → IP Address → Packet → Router
+
+Layer 2 → MAC Address → Frame → Switch
+
+Layer 1 → Bits → Cable/Signal
+
+এগুলো CCNA-এর foundation-এর মধ্যে foundation। ❤️
+
+📝 আজকের Quiz
+
+নিজের ভাষায় উত্তর দাও:
+
+১. OSI-এর পূর্ণরূপ কী?
+
+২. OSI Model-এ কয়টি Layer আছে?
+
+৩. Layer 1-এর নাম কী এবং এর কাজ কী?
+
+৪. Layer 2-এর নাম কী? এখানে কোন Address গুরুত্বপূর্ণ?
+
+৫. Layer 3-এর নাম কী? এখানে কোন Address গুরুত্বপূর্ণ?
+
+৬. Switch → কোন Layer-এর সাথে বেশি associated?
+
+৭. Router → কোন Layer-এর সাথে বেশি associated?
+
+৮. MAC Address → Layer কত?
+
+৯. IP Address → Layer কত?
