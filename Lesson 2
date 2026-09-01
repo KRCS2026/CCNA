@@ -1,0 +1,170 @@
+🟢 Lesson 2: Network-এর ভিতরে Data কীভাবে যায়?
+
+এখন একটা বাস্তব example নিই।
+
+ধরো:
+
+PC-1 ───── Switch ───── PC-2
+
+তুমি PC-1 থেকে PC-2-কে একটা ছবি পাঠালে।
+
+প্রথম প্রশ্ন:
+
+❓ PC-1 কীভাবে জানবে ছবিটা কোথায় পাঠাতে হবে?
+
+এখানে আমাদের কিছু address দরকার।
+
+যেমন বাস্তব জীবনে:
+
+Khaled → House → Road → Dhaka → Bangladesh
+
+তেমনি Network-এ device-এরও address থাকে।
+
+আজ আমরা দুই ধরনের address চিনব:
+
+1️⃣ MAC Address
+2️⃣ IP Address
+
+এ দুটো CCNA-এর খুবই গুরুত্বপূর্ণ foundation।
+
+🟡 MAC Address কী?
+
+প্রথমে MAC Address।
+
+MAC-এর পূর্ণরূপ:
+
+Media Access Control
+
+সহজভাবে:
+
+Network-এর প্রতিটি network interface-এর একটি hardware address থাকে, যাকে MAC Address বলা হয়।
+
+উদাহরণ:
+
+00:1A:2B:3C:4D:5E
+
+আরেকটা:
+
+A4:5E:60:12:AB:91
+
+তুমি এখন format মুখস্থ করার চেষ্টা করবে না।
+
+শুধু বুঝবে:
+
+MAC Address = Network interface-এর একটি hardware-level address
+
+🟡 IP Address কী?
+
+এবার IP।
+
+IP-এর পূর্ণরূপ:
+
+Internet Protocol
+
+একটা IPv4 address এমন হতে পারে:
+
+192.168.1.10
+
+অন্য একটা:
+
+192.168.1.20
+
+সহজভাবে:
+
+IP Address ব্যবহার করে network-এ device-কে identify এবং বিভিন্ন network-এর মধ্যে communication করা হয়।
+
+🧠 MAC বনাম IP
+
+এটা খুব ভালোভাবে বুঝো।
+
+ধরো:
+
+MAC Address = মানুষের NID-এর মতো
+
+IP Address = বর্তমান ঠিকানার মতো
+
+বাস্তবে একজন মানুষ অন্য জায়গায় চলে গেলে তার ঠিকানা পরিবর্তন হতে পারে।
+
+Network-এও IP address পরিবর্তন হতে পারে।
+
+কিন্তু MAC address সাধারণত network interface-এর সাথে associated থাকে।
+
+🔥 এখন একটা গুরুত্বপূর্ণ example
+PC-1
+IP: 192.168.1.10
+MAC: AA:AA:AA:AA:AA:AA
+
+        │
+        ↓
+
+      SWITCH
+
+        │
+        ↓
+
+PC-2
+IP: 192.168.1.20
+MAC: BB:BB:BB:BB:BB:BB
+
+PC-1 বলছে:
+
+"আমি 192.168.1.20-এ data পাঠাতে চাই।"
+
+কিন্তু একটা সমস্যা আছে।
+
+PC-1 জানে destination-এর IP Address।
+
+কিন্তু একই LAN-এ data পাঠানোর জন্য তার destination-এর MAC Address দরকার।
+
+তখন কী করবে?
+
+👉 ARP!
+
+ARP = Address Resolution Protocol
+
+ARP-এর কাজ:
+
+IPv4 Address থেকে MAC Address খুঁজে বের করা।
+
+তাই:
+
+IP Address
+     ↓
+    ARP
+     ↓
+MAC Address
+
+এই relationship-টা এখন থেকেই মাথায় বসিয়ে ফেলো। ⭐
+
+🎯 আজকের সবচেয়ে গুরুত্বপূর্ণ ৪টা জিনিস
+MAC Address
+
+➡️ Hardware-level address
+
+IP Address
+
+➡️ Network-level address
+
+Switch
+
+➡️ MAC Address ব্যবহার করে frame forward করে
+
+ARP
+
+➡️ IPv4 address থেকে MAC address বের করতে সাহায্য করে
+
+📝 এবার তোমার Quiz — Level 2
+
+নিজের ভাষায় উত্তর দাও:
+
+১. MAC Address কী?
+
+২. IP Address কী?
+
+৩. MAC Address আর IP Address-এর মধ্যে পার্থক্য কী?
+
+৪. ARP-এর পূর্ণরূপ কী?
+
+৫. ARP-এর কাজ কী?
+
+৬. PC-1 যদি PC-2-এর IP Address জানে কিন্তু MAC Address না জানে, তাহলে কোন protocol ব্যবহার করবে?
