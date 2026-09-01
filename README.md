@@ -7,3 +7,5 @@ CCNA in Bangla
 **Lesson 2:** Data Transmission in Networks: Added Lesson 2 on data transmission within networks, covering MAC and IP addresses, their differences, and the role of ARP.
 
 **Lesson 3:**  on LAN, WAN, and Internet= Added Lesson 3 covering LAN, WAN, and Internet concepts with examples and a quiz.
+
+**Lesson 4:** Overview of OSI Model: Introduced Lesson 4 covering the OSI Model, its layers, and key concepts.
