@@ -158,3 +158,125 @@ SYN → SYN-ACK → ACK
 ৯. SYN-ACK-এর পর কোনটা আসে?
 
 ১০. TCP কি retransmission করতে পারে?
+
+
+🟢 এখন Layer 4-এর আরেকটা গুরুত্বপূর্ণ বিষয়
+Port Number
+
+এটা CCNA-তে অত্যন্ত গুরুত্বপূর্ণ। ⭐⭐⭐⭐⭐
+
+ধরো তোমার PC-তে একসাথে:
+
+Chrome চলছে
+WhatsApp/Web app চলছে
+DNS request হচ্ছে
+SSH connection আছে
+
+সবকিছু একই computer-এর network ব্যবহার করছে।
+
+তাহলে প্রশ্ন:
+
+কোন data কোন application-এর কাছে যাবে?
+
+এখানে আসে:
+
+👉 Port Number
+
+Port number application/service identify করতে সাহায্য করে।
+
+⭐ কয়েকটা Port এখন থেকেই মুখস্থ করো
+Service	Port	Protocol
+HTTP	80	TCP
+HTTPS	443	TCP
+SSH	22	TCP
+DNS	53	TCP/UDP
+DHCP Server	67	UDP
+DHCP Client	68	UDP
+
+আজ সবগুলো গভীরভাবে পড়তে হবে না।
+
+শুধু এই ৪টা আগে মাথায় ঢোকাও:
+
+HTTP → 80
+
+HTTPS → 443
+
+SSH → 22
+
+DNS → 53
+
+🧠 Port Number-এর analogy
+
+ধরো তোমার একটা বড় building আছে।
+
+Building-এর address:
+
+192.168.1.10
+
+কিন্তু building-এর ভিতরে অনেক department:
+
+192.168.1.10
+
+Port 80  → Web
+Port 443 → Secure Web
+Port 22  → SSH
+Port 53  → DNS
+
+তাই:
+
+IP Address = কোন device?
+
+Port Number = সেই device-এর কোন service/application?
+
+এটা খুব গুরুত্বপূর্ণ concept।
+
+🚨 আজকের Golden Concept
+IP Address
+    ↓
+কোন device/network?
+
+Port Number
+    ↓
+কোন service/application?
+
+আর:
+
+MAC Address
+    ↓
+Layer 2
+
+IP Address
+    ↓
+Layer 3
+
+Port Number
+    ↓
+Layer 4
+
+এখন তোমার মাথায় যদি এই তিনটা পরিষ্কার থাকে, networking-এর foundation অনেক শক্ত হয়ে যাবে। 💪
+
+📝 Quiz — Lesson 5 Part 2
+
+নিজের ভাষায় উত্তর দাও:
+
+১. TCP retransmission বলতে কী বোঝায়?
+
+২. TCP-এর তিনটা keyword বলো।
+
+৩. Port Number কী কাজে লাগে?
+
+৪. HTTP-এর port কত?
+
+৫. HTTPS-এর port কত?
+
+৬. SSH-এর port কত?
+
+৭. DNS-এর port কত?
+
+৮. IP Address আর Port Number-এর মধ্যে পার্থক্য কী?
+
+৯. MAC Address কোন Layer?
+
+১০. IP Address কোন Layer?
+
+১১. Port Number কোন Layer-এর সাথে associated?
