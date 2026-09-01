@@ -1,0 +1,130 @@
+🟢 এখন Lesson 6 — OSI Layer 5: Session Layer
+
+এবার OSI-এর পরের layer।
+
+Layer 5 = Session Layer
+
+Session মানে সহজভাবে:
+
+দুইটি application/device-এর মধ্যে communication session establish, maintain এবং terminate করার ধারণা।
+
+একটা সহজ analogy:
+
+তুমি কারো সাথে ফোনে কথা বলছো।
+
+Call Start
+    ↓
+Conversation
+    ↓
+Call Continue
+    ↓
+Call End
+
+এখানে একটা session তৈরি হয়েছে।
+
+Networking-এও communication-এর একটি session থাকতে পারে।
+
+OSI Model আবার দেখি
+7 Application
+6 Presentation
+5 Session      ← আজ
+4 Transport
+3 Network
+2 Data Link
+1 Physical
+
+তবে একটা গুরুত্বপূর্ণ কথা:
+
+বাস্তব TCP/IP networking-এ OSI-এর প্রতিটি layer সবসময় আলাদা আলাদাভাবে কাজ করে না।
+
+OSI Model মূলত networking বোঝা, design করা এবং troubleshooting করার conceptual model।
+
+এটা এখন থেকেই মনে রাখো। কারণ CCNA-তে OSI নিয়ে tricky প্রশ্ন আসতে পারে।
+
+🟢 Layer 6 — Presentation Layer
+
+এরপর Layer 6:
+
+Presentation Layer
+
+এখানে মূল ধারণাগুলো:
+
+Data formatting
+Encryption/Decryption
+Compression/Decompression
+
+সহজ example:
+
+তুমি একটা file পাঠাচ্ছো।
+
+Application
+     ↓
+Presentation
+     ↓
+Transport
+
+Presentation layer-এর conceptual কাজ হতে পারে data-কে এমন format-এ prepare করা যাতে receiving side সেটা বুঝতে পারে।
+
+🟢 Layer 7 — Application Layer
+
+এটাই OSI-এর সবচেয়ে উপরের layer।
+
+Application Layer
+
+এখানে user-এর network services-এর সাথে interaction-এর বিষয় আসে।
+
+উদাহরণ:
+
+HTTP
+HTTPS
+DNS
+FTP
+SMTP
+
+⚠️ একটা গুরুত্বপূর্ণ distinction:
+
+Application Layer মানে Chrome বা WhatsApp নিজেই নয়।
+
+বরং application/network services-এর communication protocols এখানে associated থাকে।
+
+🎯 এখন পুরো OSI Model
+7️⃣ Application     → HTTP, DNS, etc.
+6️⃣ Presentation    → Format, Encryption, Compression
+5️⃣ Session         → Session management
+4️⃣ Transport       → TCP / UDP / Port
+3️⃣ Network         → IP / Routing
+2️⃣ Data Link       → MAC / Frame / Switch
+1️⃣ Physical        → Bits / Cable / Signal
+⭐ Shortcut
+
+7 → Application
+6 → Presentation
+5 → Session
+4 → Transport
+3 → Network
+2 → Data Link
+1 → Physical
+
+🧪 এবার তোমার Test
+
+আজকের lesson বুঝেছো কিনা দেখি:
+
+১. OSI Layer 5-এর নাম কী?
+
+২. Layer 5-এর basic কাজ কী?
+
+৩. OSI Layer 6-এর নাম কী?
+
+৪. Presentation Layer-এর ৩টা important concept কী?
+
+৫. OSI Layer 7-এর নাম কী?
+
+৬. HTTP কোন OSI Layer-এর সাথে associated?
+
+৭. TCP/UDP কোন Layer?
+
+৮. IP কোন Layer?
+
+৯. MAC কোন Layer?
+
+১০. Cable/Signal কোন Layer?
